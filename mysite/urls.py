@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from.veiw import html_test,json_test
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('html_test',html_test),
+    path('json_test',json_test)
 ]

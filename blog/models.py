@@ -24,3 +24,6 @@ class Post(models.Model):
     
     def __str__(self) -> str:
         return f"{self.title}: for id: {self.id}"
+
+    def snippet(self):
+        return self.content[:100] + "..."
